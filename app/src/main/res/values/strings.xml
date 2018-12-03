@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MisterChef</string>
+    <string name="img_meal">Imagem relacionada à receita.</string>
+    <string name="select_a_meal">Selecione a Receita</string>
+    <string name="date">Date:</string>
+    <string name="description">Detalhes</string>
+    <string name="lorem_ipsum">Quisque gravida diam sed lacus porttitor, ac commodo arcu imperdiet. Donec ut elementum
+        odio. Donec laoreet justo sit amet tellus faucibus, sed hendrerit arcu vestibulum. Suspendisse ut dui sem.
+        Aliquam pretium purus ex, rutrum volutpat est ullamcorper vitae. Pellentesque et accumsan est. Aliquam non nisi
+        magna. Aenean maximus orci non mi euismod, mollis luctus justo sagittis.
+    </string>
+    <string name="content">Passo-a-Passo</string>
+    <string name="show_in_browser">Abrir no Youtube</string>
+
+</resources>
