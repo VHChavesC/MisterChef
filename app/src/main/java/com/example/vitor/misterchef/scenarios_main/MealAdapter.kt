@@ -5,8 +5,11 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.bumptech.glide.Glide
 import com.example.vitor.misterchef.R
+import com.example.vitor.misterchef.R.id.imgMeal
 import com.example.vitor.misterchef.entities.Meal
+import kotlinx.android.synthetic.main.fragment_meal_detail.*
 import kotlinx.android.synthetic.main.meal_item.view.*
 
 
@@ -36,6 +39,11 @@ class MealAdapter(val context: Context, val meals: List<Meal>) : RecyclerView.Ad
 
         fun bindView(context: Context, meal: Meal, itemClickListener: ((index: Int) -> Unit)?) {
             itemView.tvTitle.text = meal.strMeal
+
+                Glide.with(context)
+                    .load(meal.strMealThumb)
+                    .into(itemView.imgMeal)
+
 
             if(itemClickListener != null) {
                 itemView.setOnClickListener {
