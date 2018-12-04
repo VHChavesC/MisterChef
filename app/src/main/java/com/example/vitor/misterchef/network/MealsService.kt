@@ -3,7 +3,6 @@ package com.example.vitor.misterchef.network
 import com.example.vitor.misterchef.entities.MealList
 import retrofit2.Call
 import retrofit2.http.GET
-import retrofit2.http.Query
 
 interface MealsService {
 

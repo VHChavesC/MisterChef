@@ -3,11 +3,9 @@ package com.example.vitor.misterchef.scenarios_main
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.ProgressBar
 import android.widget.Toast
 import com.example.vitor.misterchef.R
 import com.example.vitor.misterchef.entities.Meal
-import kotlinx.android.synthetic.main.fragment_meal_list.*
 
 class MainActivity : AppCompatActivity(), MainContract.View, MealsListFragment.OnFragmentInteractionListener {
 
