@@ -10,6 +10,7 @@ import com.example.vitor.misterchef.R
 import com.example.vitor.misterchef.R.id.imgMeal
 import com.example.vitor.misterchef.entities.Meal
 import kotlinx.android.synthetic.main.fragment_meal_detail.*
+import kotlinx.android.synthetic.main.fragment_meal_list.*
 import kotlinx.android.synthetic.main.meal_item.view.*
 
 

@@ -1,6 +1,8 @@
 package com.example.vitor.misterchef.scenarios_main
 
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
@@ -10,6 +12,7 @@ import com.bumptech.glide.Glide
 import com.example.vitor.misterchef.R
 import com.example.vitor.misterchef.entities.Meal
 import kotlinx.android.synthetic.main.fragment_meal_detail.*
+import kotlinx.android.synthetic.main.fragment_meal_list.*
 import java.lang.NullPointerException
 
 class MealsDetailFragment: Fragment() {
@@ -86,6 +89,7 @@ class MealsDetailFragment: Fragment() {
 
 
     }
+
 
     fun getMeal(): Meal{
         val meal = arguments?.getSerializable(ARG_MEAL) as Meal?

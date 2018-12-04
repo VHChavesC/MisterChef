@@ -4,6 +4,7 @@
     <string name="select_a_meal">Selecione a Receita</string>
     <string name="date">Date:</string>
     <string name="description">Categoria</string>
+    <string name="Random">Surpresa!</string>
     <string name="ingredient"></string>
     <string name="measure"></string>
     <string name="Ingredientes">Ingredientes</string>

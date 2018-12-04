@@ -5,10 +5,22 @@
              android:layout_height="match_parent"
              tools:context=".scenarios_main.MealsListFragment">
 
-    <android.support.v7.widget.RecyclerView
-            android:id="@+id/rvMeal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:listitem="@layout/meal_item" />
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                    android:orientation="vertical">
+        <Button
+                android:id="@+id/btnRandom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Random"/>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvMeal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/meal_item" />
+
+    </LinearLayout>
+
 
 </FrameLayout>
