@@ -2,10 +2,12 @@ package com.example.vitor.misterchef.scenarios_main
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ProgressBar
 import android.widget.Toast
 import com.example.vitor.misterchef.R
 import com.example.vitor.misterchef.entities.Meal
+import kotlinx.android.synthetic.main.fragment_meal_list.*
 
 class MainActivity : AppCompatActivity(), MainContract.View, MealsListFragment.OnFragmentInteractionListener {
 
@@ -16,6 +18,13 @@ class MainActivity : AppCompatActivity(), MainContract.View, MealsListFragment.O
         val presenter: MainContract.Presenter = MainPresenter(this)
         presenter.onLoadList()
 
+        val random = findViewById<Button>(R.id.btnRandom)
+
+        random.setOnClickListener {
+            val presenter: MainContract.Presenter = MainPresenter(this)
+            presenter.onLoadList2()
+        }
+
     }
 
     override fun showList(meals: List<Meal>) {
@@ -24,8 +33,18 @@ class MainActivity : AppCompatActivity(), MainContract.View, MealsListFragment.O
 
         supportFragmentManager.beginTransaction()
             .replace(R.id.fmMaster, fragmentMealsList)
+            .addToBackStack(null)
             .commit()
 
+    }
+
+    override fun showMeal(meal: List<Meal>){
+        val fragmentMealsList = MealsListFragment.newInstance(meal as ArrayList<Meal>)
+
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fmMaster, fragmentMealsList)
+            .addToBackStack(null)
+            .commit()
     }
 
     override fun onFragmentInteraction(meal: Meal) {

@@ -10,4 +10,6 @@ interface MealsService {
     @GET("https://www.themealdb.com/api/json/v1/1/latest.php")
     fun getLatestMeal(): Call<MealList>
 
+    @GET("https://www.themealdb.com/api/json/v1/1/random.php")
+    fun getRandomMeal(): Call<MealList>
 }

@@ -5,9 +5,22 @@
              android:layout_height="match_parent"
              android:orientation="vertical"
              tools:context=".scenarios_main.MainActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+    <Button
+            android:id="@+id/btnRandom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Random"/>
+
     <FrameLayout
             android:id="@+id/fmMaster"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
 
 </FrameLayout>
